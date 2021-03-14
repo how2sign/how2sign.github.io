@@ -1,30 +1,28 @@
-# Contributing
+# How to Contribute
 
-## Development environment set up
+We'd love to accept your patches and contributions to this project. There are
+just a few small guidelines you need to follow.
 
-Install [bundler](http://bundler.io/):
+## Contributor License Agreement
 
-```
-$ gem install bundler
-```
+Contributions to this project must be accompanied by a Contributor License
+Agreement. You (or your employer) retain the copyright to your contribution;
+this simply gives us permission to use and redistribute your contributions as
+part of the project. Head over to <https://cla.developers.google.com/> to see
+your current agreements on file or to sign a new one.
 
-Install proejct dependencies using bundler:
+You generally only need to submit a CLA once, so if you've already submitted one
+(even if it was for a different project), you probably don't need to do it
+again.
 
-```
-$ bundle install --path vendor/bundle 
-```
+## Code reviews
 
-Start development server
+All submissions, including submissions by project members, require review. We
+use GitHub pull requests for this purpose. Consult
+[GitHub Help](https://help.github.com/articles/about-pull-requests/) for more
+information on using pull requests.
 
-```
-$ bundle exec jekyll serve
-```
+## Community Guidelines
 
-Open up http://localhost:4000/
-
-(replace website with whatever `baseurl` is set to in `_config.yml`)
-
-## References
-
-* [Jekyll](https://jekyllrb.com/)
-* [Jekyll: baseurl explanation](https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/)
+This project follows
+[Google's Open Source Community Guidelines](https://opensource.google.com/conduct/).
