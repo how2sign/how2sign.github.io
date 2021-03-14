@@ -19,7 +19,7 @@ email: uob-epic-kitchens@bristol.ac.uk
 description: >-
   EPIC Kitchens
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://epic-kitchens.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://how2sign.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ""
 github_username: ""
 
