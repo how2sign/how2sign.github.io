@@ -1,2 +1,2 @@
 ## Localized Narratives
-Visit the [project page](https://google.github.io/localized-narratives) for all the information about Localized Narratives, data downloads, visualizations, and much more. 
+Visit the [project page](https://how2sign.github.io/) for all the information about the How2Sign dataset.
