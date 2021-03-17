@@ -498,7 +498,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       padding: 10px;
     }
 
-
     .caption-card {
       font-family: 'Open Sans', sans-serif;
       border: 2px solid #f1f3f4;
@@ -595,6 +594,25 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       margin: auto;
       font-size: 200%;
     }
+
+    #container {
+    width: 130px;
+    height: 60px;
+    display: table;
+    background-color: #fff;
+    }
+
+    #container .image-container {
+        text-align: center;
+        vertical-align: middle;
+        display: table-cell;
+    }
+
+    #container .image-container img {
+        max-width: 1000px;
+        max-height: 500px;
+    }
+
   </style></div>
 
   <!-- Navigation -->
@@ -691,6 +709,13 @@ One of the factors that has hindered progress in the areas of sign language reco
   <div class="center" style="margin-bottom: 20px; max-width: 600px; margin-left: auto; margin-right: auto;">
     Check out some of our dataset outputs.
   </div>
+
+  <div id="container">
+      <div class="image-container">
+          <img src="images/How2Sign_teaser_CVPR21.png" alt="A image" />
+      </div>
+  </div>
+
   <!--
   <paper-card id="open-visualizer-image">
     <img src="images/loc-narr.gif">
@@ -701,7 +726,8 @@ One of the factors that has hindered progress in the areas of sign language reco
   </paper-card>
   <paper-button class="page-button block" id="open-visualizer">Explore</paper-button>
   -->
-    <hr class="separator">
+  <br>
+  <hr class="separator">
   <h2>License</h2>
   <div class="center block">
     All the annotations available through this website are released under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> license.
