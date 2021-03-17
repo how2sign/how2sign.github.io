@@ -26,7 +26,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <title>How2Sign</title>
   <meta content="How2Sign" name="description">
-  <meta content="Jordi Pont-Tuset" name="author">
+  <meta content="Lucas Ventura" name="author">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
@@ -395,8 +395,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     hr.separator {
       background: #000;
-      max-width: 70px;
-      height: 9px;
+      max-width: 200px;
+      height: 5px;
       border: none;
     }
 
@@ -687,11 +687,11 @@ One of the factors that has hindered progress in the areas of sign language reco
   that computer vision should address in order to make meaningful progress in this field.
   </div>
   <hr class="separator">
-  <h2>Explore Localized Narratives</h2>
+  <h2>Explore How2Sign</h2>
   <div class="center" style="margin-bottom: 20px; max-width: 600px; margin-left: auto; margin-right: auto;">
-    Explore some images and play the Localized Narrative annotation: synchronized voice, caption,
-    and mouse trace. Don't forget to turn the sound on!
+    Check out some of our dataset outputs.
   </div>
+  <!--
   <paper-card id="open-visualizer-image">
     <img src="images/loc-narr.gif">
     <div id="explore-overlay">
@@ -700,6 +700,7 @@ One of the factors that has hindered progress in the areas of sign language reco
     </div>
   </paper-card>
   <paper-button class="page-button block" id="open-visualizer">Explore</paper-button>
+  -->
     <hr class="separator">
   <h2>License</h2>
   <div class="center block">
@@ -708,6 +709,13 @@ One of the factors that has hindered progress in the areas of sign language reco
   </div>
   <hr class="separator">
   <h2>Downloads</h2>
+  <div class="block">
+    <div class="center">
+      <div style="margin-bottom: 10px; margin-top:30px;"><b>Data will be soon available</b></div>
+      <hr class="separator" style="margin-bottom: 100px;">
+    </div>
+  </div>
+  <!--
   <div class="block">
     <div class="center">
       <div style="margin-bottom: 10px; margin-top:30px;"><b>Python Data Loader and Helpers</b></div>
@@ -783,6 +791,7 @@ One of the factors that has hindered progress in the areas of sign language reco
       <div class="col-download-text">
         Open Images
       </div>
+      <br><br>
       <div class="col-download-buttons">
         <div class="col-button" style="width: 33%;">
           <paper-button class="page-button" onclick="document.getElementById('subfiles-oid-train').positionTarget = this;document.getElementById('subfiles-oid-train').open();">
@@ -867,6 +876,7 @@ One of the factors that has hindered progress in the areas of sign language reco
       <div class="col-download-text">
         COCO
       </div>
+      <br><br>
       <div class="col-download-buttons">
         <div class="col-button" style="width: 33%;">
           <paper-button class="page-button" onclick="document.getElementById('subfiles-coco-train').positionTarget = this;document.getElementById('subfiles-coco-train').open();">
@@ -912,6 +922,7 @@ One of the factors that has hindered progress in the areas of sign language reco
       <div class="col-download-text">
         Flickr30k
       </div>
+      <br><br>
       <div class="col-download-buttons">
         <div class="col-button" style="width: 33%;">
           <a href="https://storage.googleapis.com/localized-narratives/annotations/flickr30k_train_localized_narratives.jsonl" style="text-decoration: none;">
@@ -934,6 +945,7 @@ One of the factors that has hindered progress in the areas of sign language reco
       <div class="col-download-text">
         ADE20k
       </div>
+      <br><br>
       <div class="col-download-buttons">
         <div class="col-button" style="width: 33%;">
           <a href="https://storage.googleapis.com/localized-narratives/annotations/ade20k_train_localized_narratives.jsonl" style="text-decoration: none;">
@@ -962,6 +974,7 @@ One of the factors that has hindered progress in the areas of sign language reco
       <div class="col-download-text">
         Open Images
       </div>
+      <br><br>
       <div class="col-download-buttons">
         <div class="col-button" style="width: 33%;">
           <a href="https://storage.googleapis.com/localized-narratives/annotations/open_images_train_v6_captions.jsonl" style="text-decoration: none;">
@@ -984,6 +997,7 @@ One of the factors that has hindered progress in the areas of sign language reco
       <div class="col-download-text">
         COCO
       </div>
+      <br><br>
       <div class="col-download-buttons">
         <div class="col-button" style="width: 33%;">
           <a href="https://storage.googleapis.com/localized-narratives/annotations/coco_train_captions.jsonl" style="text-decoration: none;">
@@ -1003,6 +1017,7 @@ One of the factors that has hindered progress in the areas of sign language reco
       <div class="col-download-text">
         Flickr30k
       </div>
+      <br><br>
       <div class="col-download-buttons">
         <div class="col-button" style="width: 33%;">
           <a href="https://storage.googleapis.com/localized-narratives/annotations/flickr30k_train_captions.jsonl" style="text-decoration: none;">
@@ -1025,6 +1040,7 @@ One of the factors that has hindered progress in the areas of sign language reco
       <div class="col-download-text">
         ADE20k
       </div>
+      <br><br>
       <div class="col-download-buttons">
         <div class="col-button" style="width: 33%;">
           <a href="https://storage.googleapis.com/localized-narratives/annotations/ade20k_train_captions.jsonl" style="text-decoration: none;">
@@ -1059,6 +1075,7 @@ One of the factors that has hindered progress in the areas of sign language reco
       <div class="col-download-text">
         Open Images
       </div>
+      <br><br>
       <div class="col-download-buttons">
         <div class="col-button" style="width: 33%;">
           <a href="https://storage.googleapis.com/localized-narratives/annotations/open_images_train_v6_asr.jsonl" style="text-decoration: none;">
@@ -1081,6 +1098,7 @@ One of the factors that has hindered progress in the areas of sign language reco
       <div class="col-download-text">
         COCO
       </div>
+      <br><br>
       <div class="col-download-buttons">
         <div class="col-button" style="width: 33%;">
           <a href="https://storage.googleapis.com/localized-narratives/annotations/coco_train_asr.jsonl" style="text-decoration: none;">
@@ -1100,6 +1118,7 @@ One of the factors that has hindered progress in the areas of sign language reco
       <div class="col-download-text">
         Flickr30k
       </div>
+      <br><br>
       <div class="col-download-buttons">
         <div class="col-button" style="width: 33%;">
           <a href="https://storage.googleapis.com/localized-narratives/annotations/flickr30k_train_asr.jsonl" style="text-decoration: none;">
@@ -1122,6 +1141,7 @@ One of the factors that has hindered progress in the areas of sign language reco
       <div class="col-download-text">
         ADE20k
       </div>
+      <br><br>
       <div class="col-download-buttons">
         <div class="col-button" style="width: 33%;">
           <a href="https://storage.googleapis.com/localized-narratives/annotations/ade20k_train_asr.jsonl" style="text-decoration: none;">
@@ -1184,6 +1204,7 @@ One of the factors that has hindered progress in the areas of sign language reco
       </div>
     </div>
   </paper-card>
+-->
 </div>
 
 
