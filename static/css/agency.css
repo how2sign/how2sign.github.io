@@ -728,3 +728,12 @@ i.fas {
   padding-bottom: 2em;
 
 }
+
+
+iframe{
+  width: 90%;
+  height: 1000px;
+  margin: 0 auto;
+  background-color: #777;
+  display:block;
+}
