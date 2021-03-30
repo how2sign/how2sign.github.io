@@ -54,6 +54,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <!-- End Google Tag Manager (noscript) -->
 
 
+
+
   <div hidden="" by-vulcanize=""><dom-module id="loco-image" assetpath="/loco-image/">
   <template>
     <style>
@@ -297,6 +299,336 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </div>
   </template>
   </dom-module>
+<style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.6;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    table,
+    tr,
+    td {
+      border: none;
+      border-collapse: collapse;
+    }
+
+    td {
+      padding: 10px;
+    }
+
+    #audio {
+      display: block;
+      outline: none;
+      width: 100%;
+    }
+
+    .card-actions {
+      color: white;
+      background-color: #126a73;
+      border: 0;
+      display: flex;
+    }
+
+    #visualizer {
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      position: fixed;
+      z-index: 1001;
+      margin: 0;
+      max-width: 1200px;
+      width: 90%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: var(--shadow-elevation-16dp_-_box-shadow);
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    #mask {
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      background-color: rgb(0, 0, 0);
+    }
+
+    #start-mask {
+      opacity: 100%;
+      transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      background-color: white;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 45px;
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
+
+    h2 {
+      font-size: 22px;
+    }
+
+    hr.separator {
+      background: #000;
+      max-width: 200px;
+      height: 5px;
+      border: none;
+    }
+
+    .block {
+      margin-bottom: 75px;
+    }
+
+    .wrap {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .paper-col {
+      width: 10.0%;
+      float: left;
+    }
+
+    .paper-col-im {
+      width: 98%;
+      border: 1px solid black;
+      margin: 2px;
+    }
+
+    #mask paper-spinner{
+      width: 100px;
+      height: 100px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50% -50%);
+      --paper-spinner-layer-1-color: white;
+      --paper-spinner-layer-2-color: white;
+      --paper-spinner-layer-3-color: white;
+      --paper-spinner-layer-4-color: white;
+      --paper-spinner-stroke-width: 10px;
+    }
+
+    #start-mask paper-spinner {
+      width: 100px;
+      height: 100px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50% -50%);
+      --paper-spinner-stroke-width: 10px;
+    }
+
+    #open-visualizer {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .page-button {
+      font-family: 'Open Sans', sans-serif;
+      width: 100%;
+      background-color: #126a73;
+      color: white;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    paper-button:hover {
+      background-color: #13a3ac;
+    }
+
+    paper-button {
+      text-transform: none;
+      transition: background-color 0.3s;
+    }
+
+    .col-download-text {
+      margin-top: 10px;
+      width: 15%;
+      float: left;
+    }
+
+    .col-download-buttons {
+      width: 85%;
+      float: left;
+      display: flex;
+    }
+
+    .col-button {
+      margin: 0;
+      padding-left: 5px;
+      padding-right: 5px;
+      float: left;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+      margin-bottom: 8px;
+    }
+
+    #subfiles-oid-train,
+    #subfiles-coco-train {
+      margin: 0;
+      display: flex;
+      padding: 10px;
+    }
+
+    .caption-card {
+      font-family: 'Open Sans', sans-serif;
+      border: 2px solid #f1f3f4;
+      padding: 0;
+      width: 100%;
+      border-radius: 9px;
+      display: flex;
+      box-shadow: none;
+      overflow: hidden;
+    }
+
+    .caption-title {
+      width: 20%;
+      max-width: 100px;
+      float: left;
+      background-color: #f1f3f4;
+      padding: 3px 10px;
+    }
+
+    .caption-content {
+      float: left;
+      padding: 3px 10px;
+    }
+
+    .icon {
+      width: 26px;
+      height: 26px;
+    }
+
+    .close-button {
+      padding: 5px;
+      position: absolute;
+      right: -16px;
+      top: -16px;
+      background-color: #126a73;
+      border-radius: 25px;
+      color: white;
+      box-shadow: var(--shadow-elevation-16dp_-_box-shadow);
+      z-index: 1002;
+    }
+
+    .field{
+      background-color: #eee;
+      border-radius: 4px;
+      padding: 3px;
+      border-left: 3px solid #126a73;
+    }
+
+    .code{
+      background-color: #eee;
+      border-radius: 4px;
+      padding: 15px;
+      border-left: 3px solid #126a73;
+    }
+
+    #close-formats-button {
+      background-color: white;
+      color: darkgray;
+      top: -42px;
+    }
+
+    #formats li{
+      margin-bottom: 10px;
+    }
+
+    #open-visualizer-image {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+      display: flex;
+      overflow: hidden;
+      box-shadow: none;
+      border-radius: 5px;
+    }
+
+    #explore-overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: #126a73;
+      opacity: 0;
+      transition-duration: 0.3s;
+      cursor: pointer;
+      display: flex;
+    }
+
+    #explore-overlay:hover {
+      opacity: 50%;
+    }
+
+    #explore-overlay-text {
+      color: white;
+      margin: auto;
+      font-size: 200%;
+    }
+
+    #container {
+    width: 130px;
+    height: 60px;
+    display: table;
+    background-color: #fff;
+    }
+
+    #container .image-container {
+        text-align: center;
+        vertical-align: middle;
+        display: table-cell;
+    }
+
+    #container .image-container img {
+        max-width: 1000px;
+        max-height: 500px;
+    }
+
+    .anchor {
+    display: block;
+    height: 92px;
+    margin-top: -92px;
+    visibility: hidden;
+    }
+
+    brs {
+    display: block;
+    margin: 10px 0;
+    }
+
+  </style></div>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
