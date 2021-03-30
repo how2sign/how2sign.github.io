@@ -8,7 +8,7 @@ p {
 }
 
 a {
-  color: ##59863f;
+  color: #59863f;
 }
 
 a:hover {
@@ -113,7 +113,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand {
-  color: ##59863f;
+  color: #59863f;
   font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 
