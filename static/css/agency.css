@@ -113,7 +113,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand {
-  color: #ed323e;
+  color: ##59863f;
   font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 
@@ -131,7 +131,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #ed323e;
+  color: #59863f;
 }
 
 @media (min-width: 992px) {
