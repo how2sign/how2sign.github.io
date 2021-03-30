@@ -8,7 +8,7 @@ p {
 }
 
 a {
-  color: #ed323e;
+  color: #4d9e4c;
 }
 
 a:hover {
@@ -17,7 +17,7 @@ a:hover {
 }
 
 .text-primary {
-  color: #ed323e !important;
+  color: #4d9e4c !important;
 }
 
 h1,
@@ -114,7 +114,7 @@ img::-moz-selection {
 
 #mainNav .navbar-brand {
   color: #ed323e;
-  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+  font-family: 'Helvetica Neue', 'Kaushan Script', Helvetica, Arial, cursive;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -691,7 +691,7 @@ ul.social-buttons li a {
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #ed323e;
+  background-color: #4d9e4c;
 }
 
 .bibtex {
