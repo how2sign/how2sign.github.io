@@ -37,14 +37,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous">
 
-
+  <!-- Logo -->
   <link rel="icon" href="images\h2s_logo.png">
 
   <!-- Custom styles for this template -->
   <link href="static/css/agency.css" rel="stylesheet">
 
   </head>
-
 
 
 <body id="page-top">
@@ -125,14 +124,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     <svg>
       <g id="box">
-
         <rect x$="[[xmin]]" y$="[[ymin]]" height$="[[height]]" width$="[[width]]" stroke$="[[borderColorRgba]]" stroke-width$="[[effectiveBorderWidth_]]" stroke-dasharray$="[[borderDashArray]]" fill="none"></rect>
-
-
         <foreignObject x$="[[xmin]]" y$="[[ymin]]" height$="[[height]]" width$="[[width]]">
-
           <div>
-
             <input id="inputText" type="text" value$="[[text]]" hidden$="[[!effectiveShowInputField_]]" style="[[getInputTextStyle_(effectiveFontSize_)]]">
             <span id="text" hidden$="[[!effectiveShowText_]]" style="[[getTextStyle_(textBackgroundColorRgba)]]">
               [[text]]
@@ -398,8 +392,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     hr.separator {
       background: #000;
-      max-width: 200px;
-      height: 5px;
+      max-width: 300px;
+      height: 2px;
       border: none;
     }
 
@@ -717,7 +711,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         year      = {2021}
   }</pre>
   </paper-dialog>
-
+  <!-- Abstract - start -->
   <hr class="separator">
   <span class="anchor" id="abstract"></span>
   <h2>Abstract</h2>
@@ -727,8 +721,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   consisting of a parallel corpus of more than 80 hours of sign language videos and <br>
   a set of corresponding modalities including speech, English transcripts, and depth. <br>
   A three-hour subset was further recorded in the Panoptic studio enabling detailed 3D pose estimation.
-  <br>
-  <br>
+  <br><br>
+  <!-- Abstract - end -->
+
+  <!-- Explore - start -->
   <hr class="separator">
   <span class="anchor" id="exploreH2S"></span>
   <h2>Explore the How2Sign dataset</h2>
@@ -741,6 +737,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <img src="images/How2Sign_Teaser-Blured.png" alt="A image" />
       </div>
   </div>
+  <br>
+  <!-- Explore - end -->
 
   <!--
   <paper-card id="open-visualizer-image">
@@ -752,7 +750,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   </paper-card>
   <paper-button class="page-button block" id="open-visualizer">Explore</paper-button>
   -->
-  <br>
+  <!-- Data - start -->
   <hr class="separator">
   <span class="anchor" id="data"></span>
   <h2>Data</h2>
@@ -764,7 +762,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       </div>
     </div>
   </div>
+  <!-- Data - end -->
 
+  <!-- Contact - start -->
   <hr class="separator">
   <span class="anchor" id="contact"></span>
   <h2>Contact</h2>
@@ -774,10 +774,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <hr class="separator" style="margin-bottom: 100px;">
     </div>
   </div>
+  <!-- Contact - end -->
 
 <!-- block removed-->
 </div>
-
 <script src="web.js"></script>
 
 <!-- Bootstrap core JavaScript -->
