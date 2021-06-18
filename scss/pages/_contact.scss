@@ -1,0 +1,94 @@
+#contact-section {
+  padding: 90px 0;
+  .contact-form {
+    margin-top: 42px;
+    .btn-send {
+      color: $white;
+      outline: none;
+      background: $primary-color;
+      transition: all linear .2s;
+      border-color: $primary-color;
+      border-radius: 0;
+    }
+  }
+  input {
+    display: block;
+    height: 40px;
+    padding: 6px 12px;
+    font-size: 13px;
+    line-height: 1.428571429;
+    background-color: $white;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    border-radius: 1px;
+    border: 1px solid rgba(111, 121, 122, 0.3);
+    box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+  textarea {
+    display: block;
+    border-radius: 0;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555555;
+    background-color: $white;
+    background-image: none;
+    border: 1px solid #cccccc;
+    box-shadow: none;
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  }
+  .address, .email, .phone {
+    text-align: center;
+    background: #F7F7F7;
+    padding: 20px 0 40px 0;
+    margin-bottom: 20px;
+  }
+  .address i, .email i, .phone i {
+    font-size: 45px;
+    color: $primary-color;
+  }
+  .address h5, .email h5, .phone h5 {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .address-details {
+    padding-top: 70px;
+  }
+}
+
+#map-canvas {
+  width: 100%;
+  height: 350px;
+  background-color: #CCC;
+}
+
+.error {
+  padding: 10px;
+  color: #D8000C;
+  border-radius: 2px;
+  font-size: 14px;
+  background-color: #FFBABA;
+}
+
+.success {
+  background-color: #6cb670;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px;
+}
+
+#error, #success{
+  display: none;
+  margin-bottom: 10px;
+}

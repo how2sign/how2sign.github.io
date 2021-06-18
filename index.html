@@ -1,799 +1,596 @@
-<!DOCTYPE html><html><head><!--
-@license
-Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
---><!--
-@license
-Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
--->
-
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-N28NPP3');</script>
-  <!-- End Google Tag Manager -->
-
-  <title>How2Sign</title>
-  <meta content="How2Sign" name="description">
-  <meta content="Lucas Ventura" name="author">
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
-
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Courier+Prime" rel="stylesheet">
-
-  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Kaushan+Script|Droid+Serif:400,700,400italic,700italic|Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous">
-
-  <!-- Logo -->
-  <link rel="icon" href="images\h2s_logo.png">
-
-  <!-- Custom styles for this template -->
-  <link href="static/css/agency.css" rel="stylesheet">
-
-  </head>
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <!-- Basic Page Needs
+        ================================================== -->
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="icon" href="favicon.ico">
+        <title>How2Sign Dataset</title>
+        <meta name="description" content="How2Sign Dataset">
+        <meta name="keywords" content="Deep Learning, deep learning, sign language, ASL, American Sign Language, american sign language, dataset, continuos sign language, video, person skeleton, depth, panoptic data, multiview, 3D, gloss">
+        <meta name="author" content="Amanda Duarte">
+        <!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<body id="page-top">
-    <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N28NPP3"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+        <!-- Template CSS Files
+        ================================================== -->
+        <!-- Twitter Bootstrs CSS -->
+        <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+        <!-- Ionicons Fonts Css -->
+        <link rel="stylesheet" href="plugins/ionicons/ionicons.min.css">
+        <!-- animate css -->
+        <link rel="stylesheet" href="plugins/animate-css/animate.css">
+        <!-- Hero area slider css-->
+        <link rel="stylesheet" href="plugins/slider/slider.css">
+        <!-- slick slider -->
+        <link rel="stylesheet" href="plugins/slick/slick.css">
+        <!-- Fancybox -->
+        <link rel="stylesheet" href="plugins/facncybox/jquery.fancybox.css">
+        <!-- hover -->
+        <link rel="stylesheet" href="plugins/hover/hover-min.css">
+        <!-- template main css file -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
 
+<!--
+        ==================================================
+        Header Section Start
+        ================================================== -->
+<section class="top-bar animated-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <!-- Logo Start -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo/h2s_logo_small.png" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Logo End -->
+                    <!-- Menu Start -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                           <!-- Home -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span> </a>
+                            </li>
 
-
-
-  <div hidden="" by-vulcanize=""><dom-module id="loco-image" assetpath="/loco-image/">
-  <template>
-    <style>
-      /* This is needed to make sure the polymer component has an
-      offsetWidth. */
-      :host {
-        display: block;
-      }
-      #main, #canvasContainer {
-        width: 100%;
-      }
-      svg {
-        border-style: solid;
-      }
-      .flexcol {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-      .flexrow {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-      }
-    </style>
-    <div id="main">
-      <template is="dom-if" if="[[title]]">
-        <div>[[title]]</div>
-      </template>
-
-      <div id="canvasContainer" hidden$="[[!imageLoaded_]]">
-        <svg id="canvas" on-tap="handleTap_" height$="[[canvasHeight]]" width$="[[canvasWidth]]" style="[[getCanvasStyle_(effectiveFontSize_, borderWidth)]]">
-          <g id="image" transform$="[[imageZoomTransform_]]">
-            <image href$="[[effectiveImageUrl_]]" height$="[[imageHeight]]" width$="[[imageWidth]]">
-              <slot id="content"></slot>
-            </image>
-          </g>
-        </svg>
-      </div>
-      <div hidden$="[[imageLoaded_]]" id="loader" style="[[getLoaderStyle_(borderWidth, canvasHeight, canvasWidth)]]">
-        <div class="flexcol">
-          <div class="flexrow">
-            <paper-spinner-lite active="[[!imageLoadingHasError_]]">
-            </paper-spinner-lite>
-            <span hidden$="[[!imageLoadingHasError_]]">
-              Failed to load image from [[imageUrl]].
-            </span>
-          </div>
+                            <!-- Explore
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Explore
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="404.html">404 Page</a>
+                                    <a class="dropdown-item" href="gallery.html">Gallery</a>
+                                    <a class="dropdown-item" href="single-post.html">Single Post</a>
+                                </div>
+                            </li>
+                                  Explore -->
+                            <!-- Download -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#download">Download</a>
+                            <!-- Code -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/how2sign/how2sign-data">Code</a>
+                            </li>
+                            <!-- Publication -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#publication">Publication</a>
+                            </li>
+                        </ul>
+                    </div>
+                  <!-- Menu End -->
+                </nav>
+            </div>
         </div>
-      </div>
-
-      <div hidden="">
-        <span>Client Coordinates: ([[clientPoint_.x]], [[clientPoint_.y]])</span><br>
-        <span>Canvas Coordinates: ([[canvasPoint_.x]], [[canvasPoint_.y]])</span><br>
-        <span>Image Coordinates: ([[imagePoint.x]], [[imagePoint.y]])</span><br>
-        <span>ViewBox Coordinates: ([[viewBoxPoint_.x]], [[viewBoxPoint_.y]])</span><br>
-        <span>imageTransform translation: ([[imageTransform_.x]],[[imageTransform_.y]])&gt;</span><br>
-        <span>imageTransform scale: [[imageTransform_.scale]]</span><br>
-        <span>ScaleRatio_: [[scaleRatio]]</span>
-      </div>
     </div>
-  </template>
-  </dom-module>
-<dom-module id="loco-bounding-box" assetpath="/loco-bounding-box/">
-  <template>
-
-    <svg>
-      <g id="box">
-        <rect x$="[[xmin]]" y$="[[ymin]]" height$="[[height]]" width$="[[width]]" stroke$="[[borderColorRgba]]" stroke-width$="[[effectiveBorderWidth_]]" stroke-dasharray$="[[borderDashArray]]" fill="none"></rect>
-        <foreignObject x$="[[xmin]]" y$="[[ymin]]" height$="[[height]]" width$="[[width]]">
-          <div>
-            <input id="inputText" type="text" value$="[[text]]" hidden$="[[!effectiveShowInputField_]]" style="[[getInputTextStyle_(effectiveFontSize_)]]">
-            <span id="text" hidden$="[[!effectiveShowText_]]" style="[[getTextStyle_(textBackgroundColorRgba)]]">
-              [[text]]
-            </span>
-          </div>
-        </foreignObject>
-      </g>
-    </svg>
-  </template>
-  </dom-module>
-<dom-module id="loco-point" assetpath="/loco-point/">
-  <template>
-    <svg>
-      <g id="point">
-        <circle cx$="[[data.x]]" cy$="[[data.y]]" r$="[[radius_(data,scaleRatio)]]" fill$="[[color_(data)]]">
-        </circle>
-      </g>
-    </svg>
-  </template>
-  </dom-module>
-<dom-module id="loco-curve" assetpath="/loco-curve/">
-  <template>
-    <svg>
-      <g id="curve">
-        <path d$="[[curveString_]]" fill="none" stroke$="[[lineColor]]" stroke-width$="[[effectiveStrokeWidth_]]">
-        </path>
-      </g>
-    </svg>
-  </template>
-  </dom-module><dom-module id="loco-segmentation-mask" assetpath="/loco-segmentation-mask/">
-  <template>
-    <svg>
-      <g id="mask">
-        <path d$="[[pathString_]]" fill$="[[fillColor]]" fill-rule="evenodd" fill-opacity$="[[fillOpacity]]">
-      </path></g>
-    </svg>
-  </template>
-  </dom-module>
-<dom-module id="loco-label" assetpath="/loco-label/">
-  <template>
-    <svg>
-      <g id="label">
-
-        <foreignObject x$="[[data.x]]" y$="[[data.y]]" height="1px" width="1px" style="overflow: visible">
-          <div>
-            <input id="inputText" type="text" value$="[[data.text]]" style="[[getInputTextStyle_(editingText, scaleRatio)]]">
-            <span id="text" style="[[getTextStyle_(data.*, editingText, scaleRatio)]]">
-              [[data.text]]
-            </span>
-          </div>
-        </foreignObject>
-      </g>
-    </svg>
-  </template>
-  </dom-module>
-<dom-module id="loco-labeled-point" assetpath="/loco-labeled-point/">
-  <template>
-
-    <template is="dom-if" if="[[data.point]]">
-      <loco-point data="{{data.point}}"></loco-point>
-
-
-      <template is="dom-if" if="[[data.label]]">
-        <loco-label editing-text="{{editingText}}" data="{{data.label}}">
-        </loco-label>
-      </template>
-    </template>
-  </template>
-  </dom-module>
-<dom-module id="loco-binary-mask" assetpath="/loco-binary-mask/">
-  <template>
-    <div hidden="">
-      <canvas id="maskCanvas">
-      </canvas>
-    </div>
-    <svg>
-      <g id="binaryMask">
-        <image id="rasterImage">
-      </image></g>
-    </svg>
-  </template>
-  </dom-module>
-<dom-module id="loco-annotated-image" assetpath="/loco-annotated-image/">
-  <template>
-    <style>
-      #image {
-          text-align: var(--loco-annotated-image-text-align);
-      }
-    </style>
-    <loco-image id="image" title="[[title]]" image-url="[[imageUrl]]" border-width="[[borderWidth]]" canvas-height="[[canvasHeight]]" canvas-width="[[canvasWidth]]" canvas-margin="[[canvasMargin]]" image-height="{{imageHeight}}" image-width="{{imageWidth}}" font-size="[[fontSize]]" image-data="{{imageData}}" expose-image-data="[[exposeImageData]]" image-point="{{imagePoint}}">
-
-      <template is="dom-repeat" items="[[objects]]" filter="hasBoundingBox_" observe="bounding_box">
-        <loco-bounding-box color="[[colorOrDefault_(item)]]" xmin="[[item.bounding_box.xmin]]" xmax="[[item.bounding_box.xmax]]" ymin="[[item.bounding_box.ymin]]" ymax="[[item.bounding_box.ymax]]" border-dash-array="[[item.bounding_box.dash_array]]" text="[[item.text]]">
-        </loco-bounding-box>
-      </template>
-
-
-      <template is="dom-repeat" items="[[boundingBoxes]]">
-        <loco-bounding-box color="[[colorOrDefault_(item)]]" border-dash-array="[[dashArrayOrDefault_(item)]]" xmin="[[item.xmin]]" xmax="[[item.xmax]]" ymin="[[item.ymin]]" ymax="[[item.ymax]]" text="[[item.text]]">
-        </loco-bounding-box>
-      </template>
-
-
-      <template is="dom-repeat" items="[[clicksToPoints_(clicks)]]">
-        <loco-point data="[[item]]">
-        </loco-point>
-      </template>
-
-
-      <template is="dom-repeat" items="{{points}}">
-        <template is="dom-if" if="[[item.x]]">
-          <loco-point data="[[item]]">
-          </loco-point>
-        </template>
-        <template is="dom-if" if="[[isLabeledPoint_(item)]]">
-          <loco-labeled-point data="[[item]]">
-          </loco-labeled-point>
-        </template>
-      </template>
-
-
-      <template is="dom-repeat" items="{{labels}}">
-        <loco-label data="{{item}}">
-        </loco-label>
-      </template>
-
-
-      <template is="dom-repeat" items="[[regions]]">
-        <loco-segmentation-mask polygons="{{item}}" fill-color="[[getSegmentationColor_(index)]]">
-        </loco-segmentation-mask>
-      </template>
-
-
-      <template is="dom-repeat" items="[[curves]]">
-        <loco-curve line-color="rgb(0,200,0)" line-width="1" points="{{item}}">
-        </loco-curve>
-      </template>
-
-
-      <template is="dom-repeat" items="[[masks]]">
-        <loco-binary-mask class="binaryMasks" mask="{{item}}">
-        </loco-binary-mask>
-      </template>
-
-    </loco-image>
-
-
-    <div hidden="">
-      <template is="dom-if" if="[[points.length]]">
-        <b>Labeled points ([[points.length]]):</b><br>
-      </template>
-      <template is="dom-repeat" items="[[points]]">
-        <template is="dom-if" if="[[!item.point]]">
-          ([[item.x]], [[item.y]])<br>
-        </template>
-        <template is="dom-if" if="[[item.point]]">
-          <i>Label:</i> [[item.label.text]]. <i>Position:</i> ([[item.point.x]], [[item.point.y]]).
-          <template is="dom-if" if="[[item.time_interval]]">
-            <i>Times:</i> ([[item.time_interval.start]], [[item.time_interval.end]])
-          </template>
-          <br>
-        </template>
-      </template>
-    </div>
-  </template>
-  </dom-module>
-<style>
-    body {
-      font-family: 'Open Sans', sans-serif;
-      line-height: 1.6;
-    }
-
-    table {
-      width: 100%;
-    }
-
-    table,
-    tr,
-    td {
-      border: none;
-      border-collapse: collapse;
-    }
-
-    td {
-      padding: 10px;
-    }
-
-    #audio {
-      display: block;
-      outline: none;
-      width: 100%;
-    }
-
-    .card-actions {
-      color: white;
-      background-color: #126a73;
-      border: 0;
-      display: flex;
-    }
-
-    #visualizer {
-      visibility: hidden;
-      opacity: 0;
-      transition: all 0.3s;
-      -webkit-transition: all 0.3s;
-      position: fixed;
-      z-index: 1001;
-      margin: 0;
-      max-width: 1200px;
-      width: 90%;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      box-shadow: var(--shadow-elevation-16dp_-_box-shadow);
-      font-family: 'Open Sans', sans-serif;
-    }
-
-    #mask {
-      visibility: hidden;
-      opacity: 0;
-      transition: all 0.3s;
-      -webkit-transition: all 0.3s;
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      z-index: 1000;
-      background-color: rgb(0, 0, 0);
-    }
-
-    #start-mask {
-      opacity: 100%;
-      transition: all 0.3s;
-      -webkit-transition: all 0.3s;
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      z-index: 1000;
-      background-color: white;
-    }
-
-    .center {
-      text-align: center;
-    }
-
-    h2 {
-      text-align: center;
-      font-size: 24px;
-    }
-
-    h1 {
-      font-size: 45px;
-      margin-bottom: 50px;
-      margin-top: 50px;
-      text-align: center;
-    }
-
-    h3 {
-      text-align: left;
-      font-size: 20px;
-    }
-
-    hr.separator {
-      background: #000;
-      max-width: 300px;
-      height: 1px;
-      border: none;
-    }
-
-    .block {
-      margin-bottom: 75px;
-    }
-
-    .wrap {
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .paper-col {
-      width: 10.0%;
-      float: left;
-    }
-
-    .paper-col-im {
-      width: 98%;
-      border: 1px solid black;
-      margin: 2px;
-    }
-
-    #mask paper-spinner{
-      width: 100px;
-      height: 100px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50% -50%);
-      --paper-spinner-layer-1-color: white;
-      --paper-spinner-layer-2-color: white;
-      --paper-spinner-layer-3-color: white;
-      --paper-spinner-layer-4-color: white;
-      --paper-spinner-stroke-width: 10px;
-    }
-
-    #start-mask paper-spinner {
-      width: 100px;
-      height: 100px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50% -50%);
-      --paper-spinner-stroke-width: 10px;
-    }
-
-    #open-visualizer {
-      margin-left: 0;
-      margin-right: 0;
-    }
-
-    .page-button {
-      font-family: 'Open Sans', sans-serif;
-      width: 100%;
-      background-color: #126a73;
-      color: white;
-      margin-left: 0;
-      margin-right: 0;
-    }
-
-    paper-button:hover {
-      background-color: #13a3ac;
-    }
-
-    paper-button {
-      text-transform: none;
-      transition: background-color 0.3s;
-    }
-
-    .col-download-text {
-      margin-top: 10px;
-      width: 15%;
-      float: left;
-    }
-
-    .col-download-buttons {
-      width: 85%;
-      float: left;
-      display: flex;
-    }
-
-    .col-button {
-      margin: 0;
-      padding-left: 5px;
-      padding-right: 5px;
-      float: left;
-    }
-
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-      margin-bottom: 8px;
-    }
-
-    #subfiles-oid-train,
-    #subfiles-coco-train {
-      margin: 0;
-      display: flex;
-      padding: 10px;
-    }
-
-    .caption-card {
-      font-family: 'Open Sans', sans-serif;
-      border: 2px solid #f1f3f4;
-      padding: 0;
-      width: 100%;
-      border-radius: 9px;
-      display: flex;
-      box-shadow: none;
-      overflow: hidden;
-    }
-
-    .caption-title {
-      width: 20%;
-      max-width: 100px;
-      float: left;
-      background-color: #f1f3f4;
-      padding: 3px 10px;
-    }
-
-    .caption-content {
-      float: left;
-      padding: 3px 10px;
-    }
-
-    .icon {
-      width: 26px;
-      height: 26px;
-    }
-
-    .close-button {
-      padding: 5px;
-      position: absolute;
-      right: -16px;
-      top: -16px;
-      background-color: #126a73;
-      border-radius: 25px;
-      color: white;
-      box-shadow: var(--shadow-elevation-16dp_-_box-shadow);
-      z-index: 1002;
-    }
-
-    .field{
-      background-color: #eee;
-      border-radius: 4px;
-      padding: 3px;
-      border-left: 3px solid #126a73;
-    }
-
-    .code{
-      background-color: #eee;
-      border-radius: 4px;
-      padding: 15px;
-      border-left: 3px solid #126a73;
-    }
-
-    #close-formats-button {
-      background-color: white;
-      color: darkgray;
-      top: -42px;
-    }
-
-    #formats li{
-      margin-bottom: 10px;
-    }
-
-    #open-visualizer-image {
-      width: 70%;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 20px;
-      display: flex;
-      overflow: hidden;
-      box-shadow: none;
-      border-radius: 5px;
-    }
-
-    #explore-overlay {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      background: #126a73;
-      opacity: 0;
-      transition-duration: 0.3s;
-      cursor: pointer;
-      display: flex;
-    }
-
-    #explore-overlay:hover {
-      opacity: 50%;
-    }
-
-    #explore-overlay-text {
-      color: white;
-      margin: auto;
-      font-size: 200%;
-    }
-
-    #container {
-    width: 130px;
-    height: 60px;
-    display: table;
-    background-color: #fff;
-    }
-
-    #container .image-container {
-        text-align: center;
-        vertical-align: middle;
-        display: table-cell;
-    }
-
-    #container .image-container img {
-        max-width: 1000px;
-        max-height: 500px;
-    }
-
-    .anchor {
-    display: block;
-    height: 92px;
-    margin-top: -92px;
-    visibility: hidden;
-    }
-
-    brs {
-    display: block;
-    margin: 10px 0;
-    }
-
-  </style></div>
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"> <img style="width:10em;" src="static/img/logo/how2sign-logo.svg" alt="Logo"></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav text-uppercase ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#publication">Publication</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#abstract">Abstract</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#data">Explore</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#download">Download</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="masthead">
-    <div class="container">
-      <div class="intro-text">
-      </div>
-    </div>
-  </header>
-
-<div class="wrap">
-  <h1 style="margin-bottom: 0; margin-top: 100px">How2Sign</h1>
-  <h2 style="margin-bottom: 10px; margin-top: 10px;">A Large-scale Multimodal Dataset for Continuous American Sign Language</h2>
-  <hr class="separator">
-  <span class="anchor" id="publication"></span>
-  <h2>Publication</h2>
-  <br>
-  <a href="https://arxiv.org/pdf/2008.08143.pdf" target="_blank">
+</section>
+
+<!--
+==================================================
+Slider Section Start
+================================================== -->
+<section id="hero-area" >
+<div class="container">
     <div class="row">
-      <div class="paper-col"><img class="paper-col-im" src="images/publication/How2sign-01.png"></div>
-      <div class="paper-col"><img class="paper-col-im" src="images/publication/How2sign-02.png"></div>
-      <div class="paper-col"><img class="paper-col-im" src="images/publication/How2sign-03.png"></div>
-      <div class="paper-col"><img class="paper-col-im" src="images/publication/How2sign-04.png"></div>
-      <div class="paper-col"><img class="paper-col-im" src="images/publication/How2sign-05.png"></div>
-      <div class="paper-col"><img class="paper-col-im" src="images/publication/How2sign-06.png"></div>
-      <div class="paper-col"><img class="paper-col-im" src="images/publication/How2sign-07.png"></div>
-      <div class="paper-col"><img class="paper-col-im" src="images/publication/How2sign-08.png"></div>
-      <div class="paper-col"><img class="paper-col-im" src="images/publication/How2sign-09.png"></div>
-      <div class="paper-col"><img class="paper-col-im" src="images/publication/How2sign-10.png"></div>
+        <div class="col-md-12 text-center">
+            <div class="block wow fadeInUp" data-wow-delay=".3s">
+
+                <!-- Slider -->
+                <section class="cd-intro">
+                    <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".2s" >
+                    <span>How2Sign Dataset</span><br>
+                    <span class="cd-words-wrapper">
+                        <b class="is-visible">Continuous American Sign Language</b>
+                        <b>Multiview videos</b>
+                        <b>Depth data</b>
+                        <b>2D &amp 3D skeletons</b>
+                        <b>Gloss annotation</b>
+                        <b>English translation</b>
+                    </span>
+                    </h1>
+                    </section> <!-- cd-intro -->
+                    <!-- /.slider -->
+                    <h2 class="wow fadeInUp animated" data-wow-delay=".6s" >
+                        <span>The firt large-scale multimodal and multiview continuous American Sign Language dataset</span>
+                    </h2>
+                    <!-- Download -->
+                    <a class="btn-lines dark light wow fadeInUp animated btn btn-default btn-green" data-wow-delay=".9s" href="#download">Download Sample</a>
+                    "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+                    <a class="btn-lines dark light wow fadeInUp animated btn btn-default btn-green" data-wow-delay=".9s" href="#download">Download Full Dataset</a>
+                </div>
+            </div>
+        </div>
     </div>
-  </a>
+</section><!--/#main-slider-->
 
-  <div class="center block" style="margin-top: 10px;">
-    <h6>
-      <b>How2Sign: A Large-scale Multimodal Dataset for Continuous American Sign Language</b><br>
-    </h6>
-    <brs><brs>
-    <h6>
-      <a href="http://amandaduarte.com.br/" target="_blank">Amanda Duarte</a>,
-      <a href="https://shrutijpalaskar.github.io/" target="_blank">Shruti Palaskar</a>,
-      <a href="http://lucasventura.com/" target="_blank">Lucas Ventura</a>,
-      <a href="https://deeptigp.github.io/" target="_blank">Deepti Ghadiyaram</a>,
-      <a href="https://my.gallaudet.edu/kenneth-de-haan" target="_blank">Kenneth DeHaan</a>,<br>
-      <a href="https://www.cs.cmu.edu/~fmetze/interACT/Home.html" target="_blank">Florian Metze</a>,
-      <a href="https://torres.ai/" target="_blank">Jordi Torres</a>, and
-      <a href="https://imatge.upc.edu/web/people/xavier-giro" target="_blank">Xavier Giró-i-Nieto</a><br>
-      <brs>
-      CVPR, 2021 <br>
-  </h6>
-    [<a href="https://arxiv.org/pdf/2008.08143.pdf" target="_blank">PDF</a>] [<a href="javascript:document.getElementById('bibtex').open();">BibTeX</a>] [<a href="https://youtu.be/TzMDoTrFO1E" target="_blank">1' video</a>]
-  </div>
+<!--
+==================================================
+About Section Start
+================================================== -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <div class="block wow" data-wow-delay=".3s" data-wow-duration="500ms">
+                    <h2>
+                    ABOUT
+                    </h2>
+                    <p align="justify">
+                      We introduce How2Sign, a multimodal and multiview continuous American Sign Language (ASL) dataset,
+                      consisting of a parallel corpus of more than 80 hours of sign language videos and a set of corresponding
+                      modalities including speech, English transcripts, and depth. <br>
 
-  <paper-dialog entry-animation="fade-in-animation" exit-animation="fade-out-animation" id="bibtex" with-backdrop="">
-  <pre>@inproceedings{Duarte_CVPR2021,
-        author    = {Duarte, Amanda and Palaskar, Shruti and Ventura, Lucas and Ghadiyaram, Deepti and DeHaan, Kenneth and Metze, Florian and Torres, Jordi and Giro-i-Nieto, Xavier},
-        title     = {How2Sign: A Large-scale Multimodal Dataset for Continuous American Sign Language},
-        booktitle = {Conference on Computer Vision and Pattern Recognition (CVPR)},
-        year      = {2021}
-  }</pre>
-  </paper-dialog>
-  <!-- Abstract - start -->
-  <hr class="separator">
-  <span class="anchor" id="abstract"></span>
-  <h2>About</h2>
-  <br>
-  <!-- <div class="center block"> -->
-  We introduce How2Sign, a multimodal and multiview continuous American Sign Language (ASL) dataset, consisting of a parallel corpus of more than 80 hours of sign language videos and a set of corresponding modalities including speech, English transcripts, and depth. <br>
-  A three-hour subset was further recorded in the Panoptic studio enabling detailed 3D pose estimation.
-  <br><br>
-  <!-- Abstract - end -->
+                      A three-hour subset was further recorded in the Panoptic studio enabling detailed 3D pose estimation.<br>
 
-  <!-- Explore - start -->
-  <hr class="separator">
-  <span class="anchor" id="data"></span>
-  <h2>The How2Sign Dataset</h2>
-  <br>
-  <div style="margin-bottom: 20px; max-width: 600px; margin-left: auto; margin-right: auto;">
-    <center>Samples of the data you will find on the How2Sign dataset.</center>
-  </div>
-  <div id="container">
-      <div class="image-container">
-          <img src="images/How2Sign_Teaser-Blured.png" alt="A image" />
-      </div>
-  </div>
-  <br><br>
-  <!-- Explore - end -->
+                      This dataset is publicly available for research purposes only.
 
-  <!--
-  <paper-card id="open-visualizer-image">
-    <img src="images/loc-narr.gif">
-    <div id="explore-overlay">
-      <div id="explore-overlay-text">Explore&nbsp;<iron-icon icon="exit-to-app" style="--iron-icon-height: 30px;--iron-icon-width: 30px;"></iron-icon>
-      </div>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="block wow">
+                    <img src="images/teaser.png">
+                </div>
+            </div>
+        </div>
     </div>
-  </paper-card>
-  <paper-button class="page-button block" id="open-visualizer">Explore</paper-button>
-  -->
-  <!-- Data - start -->
-  <hr class="separator">
-  <span class="anchor" id="download"></span>
-  <h2>Download</h2>
-  <div class="block">
-      <div style="margin-bottom: 10px; margin-top:30px;"><b><span>Dataset Release Timeline:</span></b> The dataset is expected to be released in June of 2021.
+</section> <!-- /#about -->
+
+<!--
+==================================================
+Download Section Start
+================================================== -->
+<section id="download">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2 class="title wow">Download</h1>
+            <p class="wow"> <span>This section is under construction.</span> Part of the data is not available yet.<br>
+              We will be releasing the rest of the data as well as scripts to easily download soon! <br>
+              The dataset is publicly available for research purposes only.
+            </p>
+            <!-- Buttons to download the dataset at once
+            <a href="contact.html" class="btn btn-default btn-contact wow" data-wow-delay=".7s" data-wow-duration="500ms">Download Sample</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="contact.html" class="btn btn-default btn-contact wow" data-wow-delay=".7s" data-wow-duration="500ms">Download Full Dataset</a>
+        </div>
         <br>
-        If you would like to receive a notification when the data is released, please contact the authors at: amanda.duarte[AT]upc.edu</a>.<br>
-      <h3>Disclaimer</h3>
-      The How2Sign dataset was collected as a tool for research, however, it is worth noting that the dataset may have unintended biases (including those of a societal, gender or racial nature).
-      <br><br>
-      <!--
+        --->
 
-      <h3>Copyright</h3>
-      The dataset and benchmarks on this page are copyright by the authors and published under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.
-      This means that you must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
-      <br>
-      No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
-      <br>
+      <!-- New added section start -->
+              <div class="row">
+                <div class="col-sm-12">
+                  <h4 style="padding-top: 25px;">Download the videos, annotations and metadata separately</h4>
+                </div>
+              </div>
+              <!-- Green Screen RGB videos (frontal view) - START -->
+              <div class="row">
+                <div class="col-2 titlecol"> Green Screen RGB <span>videos</span> (frontal view) </div>
+                <div class="col-10" style="padding:0">
+                  <div class="col-4">
+                    <a href="https://drive.google.com/u/0/uc?id=11yvM_x5bFhVl5EcU-PRNdN6K7TOWCEmU&export=download" target="_blank">
+                        <button class="button">Train (290G)</button>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="https://drive.google.com/u/2/uc?id=1AxoXv8qQv2M4Wzyg_i6RPv-U35x-ZH7a&export=download" target="_blank">
+                      <button class="button">Validation (16G)</button>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="https://drive.google.com/u/2/uc?id=18YOZ2tM74MmcgZJ63VQe0uzFqWe0j3Hl&export=download" target="_blank">
+                      <button class="button">Test (23G)</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Green Screen RGB videos (frontal view) - FINAL -->
+              <!-- Green Screen RGB videos (side view) - START -->
+              <div class="row">
+                <div class="col-2 titlecol"> Green Screen RGB <span>videos</span> (side view) </div>
+                <div class="col-10" style="padding:0">
+                  <div class="col-4">
+                    <a href="https://drive.google.com/u/0/uc?id=1ZihOTh97dlULKfjVEsVAsSrsKFcopfCq&export=download" target="_blank">
+                      <button class="button" id="seg_train_button">Train (290G)</button>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="https://drive.google.com/u/2/uc?id=1HyRHH70vspERdn2W2ECDXbror34rFnuQ&export=download" target="_blank">
+                      <button class="button" id="seg_validation_button"> Validation (16G)</button>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="https://drive.google.com/u/2/uc?id=1qRYOUERTAERQVhBcexuKAN-SBZ4McsB5&export=download" target="_blank">
+                      <button class="button" id="seg_test_button" >Test (23G)</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Green Screen RGB videos (side view) - FINAL -->
+              <!-- Green Screen RGB clips (frontal view) - START -->
+              <div class="row">
+                <div class="col-2 titlecol"> Green Screen RGB <span>clips*</span> (frontal view) </div>
+                <div class="col-10" style="padding:0">
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Train </button>
+                    </a>
+                    </div>
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Validation</button>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Test</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Green Screen RGB clips (frontal view) - FINAL -->
+              <!-- Green Screen RGB clips (side view) - START -->
+              <div class="row">
+                <div class="col-2 titlecol"> Green Screen RGB <span>clips*</span> (side view) </div>
+                <div class="col-10" style="padding:0">
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Train </button>
+                    </a>
+                    </div>
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Validation</button>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Test</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Green Screen RGB clips (side view) - FINAL -->
+              <!-- Green Screen 2D keyponts clips (frontal view) - START -->
+              <div class="row">
+                <div class="col-2 titlecol"> B-F-H 2D Keypoints <span>clips*</span> (frontal view)</div>
+                <div class="col-10" style="padding:0">
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Train </button>
+                    </a>
+                    </div>
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Validation</button>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Test</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Green Screen 2D keyponts clips (frontal view) - FINAL -->
+              <!-- Green Screen 2D keyponts clips (side view) - START -->
+              <div class="row">
+                <div class="col-2 titlecol"> B-F-H 2D Keypoints <span>clips*</span> (side view) </div>
+                <div class="col-10" style="padding:0">
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Train </button>
+                    </a>
+                    </div>
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Validation</button>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Test</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Green Screen 2D keyponts clips (side view) - FINAL -->
+              <!-- How2 dataset - START -->
+              <div class="row">
+                <div class="col-2 titlecol"> How2 data* </div>
+                <div class="col-10" style="padding:0">
+                  <div class="col-12">
+                    <a href="https://github.com/srvk/how2-dataset" target="_blank">
+                      <button class="button">Go to the How2 dataset website</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- How2 dataset - FINAL -->
+              <!-- English Translation - START -->
+              <div class="row">
+                <div class="col-2 titlecol"> English Translation </div>
+                <div class="col-10" style="padding:0">
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Train</button>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Validation</button>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Test</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- English Translation - FINAL -->
+              <!-- Gloss Annotation - START
+              <div class="row">
+                <div class="col-2 titlecol"> Gloss Annotation </div>
+                <div class="col-10" style="padding:0">
+                  <div class="col-4">
+                    <a href="https://storage.googleapis.com/openimages/v6/oidv6-train-annotations-bbox.csv">
+                      <button class="button">Train</button>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="https://storage.googleapis.com/openimages/v6/oidv6-train-annotations-bbox.csv">
+                      <button class="button">Validation</button>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="https://storage.googleapis.com/openimages/v6/oidv6-train-annotations-bbox.csv">
+                      <button class="button">Test</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+                      Gloss Annotation - FINAL -->
+
+              <!-- Metadata - START
+              <div class="row">
+                <div class="col-2 titlecol"> Metadata </div>
+                <div class="col-10" style="padding:0">
+                  <div class="col-fifth">
+                    <a href="">
+                      <button class="button">Video categories</button>
+                    </a>
+                  </div>
+                  <div class="col-fifth">
+                    <a href="">
+                      <button class="button"> Original timestamps </button>
+                    </a>
+                  </div>
+                  <div class="col-fifth">
+                    <a href="">
+                      <button class="button">Re-aligned timestamps</button>
+                    </a>
+                  </div>
+                  <div class="col-fifth">
+                    <a href="">
+                      <button class="button"> General Statistics </button>
+                    </a>
+                  </div>
+                  <div class="col-fifth">
+                    <a href="">
+                      <button class="button"> Camera parameters </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              Metadata - FINAL -->
+
+
+      </div> <!-- col-md-12 -->
+    </div><!-- row -->
+
+        <div class="extra-info">
+            <p>
+              <h4>Copyright</h4>
+              <p class="wow">
+                The dataset on this webpage is copyright by us and published under the <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+                This means that you must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+                <span> You may NOT use the material for commercial purposes.</span></p>
+
+              <h4>Disclaimer</h4>
+              <p class="wow"> The How2Sign dataset was collected as a tool for research, however, it is worth noting that the dataset may have unintended biases (including those of a societal, gender or racial nature).
+              For more information about the bias that the dataset might present, please refer to the published paper.</p>
+
+              <h4>Green Screen RGB clips*</h4>
+              <p class="wow"> The Green Screen RGB clips were segmented using the original timestamps from the How2 dataset.
+                Each clip corresponds to one sentence of the English translation. Note that this may not have a perfect alignment between the ASL video and the English translation due to the differences between both languages. <br>
+                The manual re-alignment of the English translation with the ASL videos will be released soon!
+              </p>
+
+              <h4>How2 Data*</h4>
+              <p class="wow"> For copyright reasons, we are not allowed to redistribute the How2 data. Please refer to the original repository to request and download the entire How2 dataset if needed.<br>
+                Note that the How2Sign follows the original [train/validation/test] splits of the How2 dataset.
+              </p>
+
+              <h4>Reporting Issues</h4>
+              <p class="wow"> If you have any problems with the data, please let us know by creating a "<a href="https://github.com/how2sign/how2sign.github.io/issues"> New issue</a>" on the Github repo.
+              </p>
+            </p>
+       </div><!--extra-info-->
+    </div><!--container-->
+</section>
+
+<!--
+  ==================================================
+  Publication Section Start
+  ================================================== -->
+  <section id="publication">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="block">
+                      <h1 class="title wow" data-wow-delay=".3s" data-wow-duration="500ms">Publication</h1>
+                      <p class="wow"> <span>How2Sign: A Large-scale Multimodal Dataset for Continuous American Sign Language </span><br>
+                      <p class="wow">
+                            <a href="http://amandaduarte.com.br/" target="_blank">Amanda Duarte</a>,
+                            <a href="https://shrutijpalaskar.github.io/" target="_blank">Shruti Palaskar</a>,
+                            <a href="http://lucasventura.com/" target="_blank">Lucas Ventura</a>,
+                            <a href="https://deeptigp.github.io/" target="_blank">Deepti Ghadiyaram</a>,
+                            <a href="https://my.gallaudet.edu/kenneth-de-haan" target="_blank">Kenneth DeHaan</a>,
+                            <a href="https://www.cs.cmu.edu/~fmetze/interACT/Home.html" target="_blank">Florian Metze</a>,
+                            <a href="https://torres.ai/" target="_blank">Jordi Torres</a>, and
+                            <a href="https://imatge.upc.edu/web/people/xavier-giro" target="_blank">Xavier Giró-i-Nieto</a><br>
+                            CVPR, 2021 <br>
+                            [<a href="https://arxiv.org/abs/2008.08143" target="_blank">PDF</a>] [<a href="https://youtu.be/DMlPw6J353o" target="_blank">1' video</a>] [<a href="https://how2sign.github.io/images/poster/How2Sign_Poster.pdf" target="_blank">Poster</a>]
+
+                      <p class="wow">When using the How2Sign Dataset please reference:</p>
+                      <div class="alert">
+                          @inproceedings{Duarte_CVPR2021,<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;title={{How2Sign: A Large-scale Multimodal Dataset for Continuous American Sign Language}},<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;author={Duarte, Amanda and Palaskar, Shruti and Ventura, Lucas and Ghadiyaram, Deepti and DeHaan, Kenneth and <br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                               Metze, Florian and Torres, Jordi and Giro-i-Nieto, Xavier},<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;booktitle={Conference on Computer Vision and Pattern Recognition (CVPR)},<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;year={2021}<br>
+                          }
+                      </div>
+                      <!-- Video - START -->
+                      &nbsp;&nbsp;
+                      <div class="block">
+                        <h1 class="title wow" data-wow-delay=".3s" data-wow-duration="500ms">Video Summary</h1>
+                        <center>
+                          <div class="embed-responsive embed-responsive-16by9 youtubeEmbed">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Y9oQH44nCag"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </div>
+                        </center>
+                      </div>
+                    <!-- Video - END -->
+                    <br><br>
+
+                    <!-- Press - START
+                      <div class="block">
+                        <h1 class="title wow" data-wow-delay=".3s" data-wow-duration="500ms">Press Coverage</h1>
+                        <p>
+                          The How2Sign dataset was featured by:
+                          <center>
+                              <a href="https://www.bsc.es/"> <img src="images/ack/bsc-logo.png" class="img-responsive" alt="" style="max-width: calc(20%);"></a>
+                              <a href="https://www.upc.edu/ca"> <img src="images/ack/UPC_logo.png" class="img-responsive" alt="" style="max-width: calc(25%);"></a>
+                              <a href="https://www.cmu.edu/"> <img src="images/ack/CMU_logo.png" class="img-responsive" alt="" style="max-width: calc(10%);"></a>
+                              <a href="https://www.gallaudet.edu/"> <img src="images/ack/gallaudet_logo.png" class="img-responsive" alt="" style="max-width: calc(20%);"></a>
+                          </center>
+                        </p>
+                      </div>
+                       Press - END -->
+
+                      <h1 class="title wow" data-wow-delay=".3s" data-wow-duration="500ms">Developed by</h1>
+                      <center>
+                          <a href="https://www.bsc.es/"> <img src="images/ack/bsc-logo.png" class="img-responsive" alt="" style="max-width: calc(19%);" ></a>
+                          &nbsp;
+                          <a href="https://www.upc.edu/ca"> <img src="images/ack/UPC_logo.png" class="img-responsive" alt="" style="max-width: calc(22%);"></a>
+                          &nbsp;
+                          <a href="https://www.cmu.edu/"> <img src="images/ack/CMU_logo.png" class="img-responsive" alt="" style="max-width: calc(8%);"></a>
+                          &nbsp;
+                          <a href="https://www.gallaudet.edu/"> <img src="images/ack/gallaudet_logo.png" class="img-responsive" alt="" style="max-width: calc(18%);"></a>
+                      </center>
+
+                      <br><br>
+                      <h1 class="title wow" data-wow-delay=".3s" data-wow-duration="500ms">Supported by</h1>
+                      <center>
+                          <a href="https://research.fb.com/"> <img src="images/ack/facebook_AI_logo.jpg" class="img-responsive" alt="" style="max-width: calc(20%);"></a>
+                          &nbsp;&nbsp;
+                          <a href="https://fundacionlacaixa.org/es/home"> <img src="images/ack/La_Caixa_logo.jpg" class="img-responsive" alt="" style="max-width: calc(8%);"></a>
+                          &nbsp;&nbsp;
+                          <a href="https://web.gencat.cat/ca/inici"> <img src="images/ack/Generalitat_catalunya.png" class="img-responsive" alt="" style="max-width: calc(11%);"></a>
+                          &nbsp;&nbsp;
+                          <a href="https://www.ciencia.gob.es/site-web/en/"> <img src="images/ack/espanha.png" class="img-responsive" alt="" style="max-width: calc(8%);"></a>
+                          &nbsp;&nbsp;
+                          <a href="https://www.bsc.es/es/descubre-el-bsc/excelencia-en-investigacion/severo-ochoa"> <img src="images/ack/severo_ochoa.jpeg" class="img-responsive" alt="" style="max-width: calc(15%);"></a>
+
+                      </center>
+
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </section>
+
+<!--
+==================================================
+Footer Section Start
+================================================== -->
+<footer id="footer">
+    <div class="container">
+        <div class="row content-justify-between">
+            <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+
+                <p class="copyright"> <img src="images/cc-by.png" href="" class="img-fluid" alt="" > &nbsp;&nbsp; &copy;Copyright <script>document.write(new Date().getFullYear());</script> <span>How2Sign</span> <br>
+                  Template borrowed from <a href="https://cv.iri.upc-csic.es/index.html"> 3DPeople dataset</a>
+                </p>
+            </div>
+            <div class="col-md-4 col-12">
+
+                <!-- Social Media -->
+                <ul class="social text-center text-md-right text-lg-right">
+                    <li>
+                      For general enquiries, please contact: <a href="mailto:amanda.duarte@upc.edu">amanda.duarte[at]upc.edu</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-  </div>
--->
-  <!-- Data - end -->
+</footer> <!-- /#footer -->
 
-  <!-- Contact - start -->
-  <hr class="separator">
-  <span class="anchor" id="contact"></span>
-  <h2>Contact</h2>
-    <div class="center">
-      Contact email for any queries: amanda.duarte[AT]upc.edu.
-    <hr class="separator" style="margin-bottom: 100px;">
-    </div>
-  <!-- Contact - end -->
-
-<!-- block removed-->
-</div>
-<script src="web.js"></script>
-
-<!-- Bootstrap core JavaScript -->
-<script src="static/vendor/jquery/jquery.min.js"></script>
-<script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="static/vendor/jquery-easing/jquery.easing.min.js"></script>
-<!-- Custom scripts for this template -->
-<script src="static/js/agency.min.js"></script>
-</body></html>
+	<!-- Template Javascript Files
+	================================================== -->
+	<!-- jquery -->
+	<script src="plugins/jQurey/jquery.min.js"></script>
+	<!-- Form Validation -->
+    <script src="plugins/form-validation/jquery.form.js"></script>
+    <script src="plugins/form-validation/jquery.validate.min.js"></script>
+	<!-- slick slider -->
+	<script src="plugins/slick/slick.min.js"></script>
+	<!-- bootstrap js -->
+	<script src="plugins/bootstrap/bootstrap.min.js"></script>
+	<!-- wow js -->
+	<script src="plugins/wow-js/wow.min.js"></script>
+	<!-- slider js -->
+	<script src="plugins/slider/slider.js"></script>
+	<!-- Fancybox -->
+	<script src="plugins/facncybox/jquery.fancybox.js"></script>
+	<!-- template main js -->
+	<script src="js/main.js"></script>
+ 	</body>
+</html>

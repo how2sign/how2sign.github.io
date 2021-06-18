@@ -1,0 +1,43 @@
+#call-to-action {
+  background: $primary-color;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 80px 0;
+  text-align: center;
+  position: relative;
+  color: $white;
+  .block {
+    position: relative;
+    z-index: 9;
+    color: $white;
+    h2 {
+      margin-bottom: 15px;
+      color: $white;
+    }
+    p {
+      font-size: 15px;
+      font-weight: 300;
+      font-family: 'Roboto', sans-serif;
+      margin-top: 20px;
+    }
+    .btn-contact {
+      background: $white;
+      border: 2px solid $white;
+      color: $primary-color;
+      padding: 15px 34px;
+      margin-top: 20px;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border-radius: 0;
+      transition: all linear .2s;
+      i {
+        margin-right: 10px;
+      }
+      &:hover{
+        color: $white;
+        background: $primary-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+#team {
+  margin: 50px 0;
+}
+
+.team-member {
+  margin-top: 30px;
+  &:hover .team-img img {
+    opacity: .8;
+  }
+  .team-img {
+    position: relative;
+    .team-pic {
+      width: 100%;
+    }
+  }
+  .team_designation {
+    font-size: 13px;
+  }
+  h3 {
+    color: $primary-color;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .social-icons {
+    a {
+      background: $primary-color;
+      color: $white;
+      padding: 4px 8px;
+      display: inline-block;
+      font-size: 15px;
+    }
+    .facebook {
+      padding: 4px 12px;
+    }
+  }
+}

@@ -1,0 +1,150 @@
+body {
+  background: $body-color;
+}
+
+ul {
+  padding-left: 0;
+  li {
+    list-style: none;
+  }
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 65px;
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #727272;
+    line-height: 20px;
+  }
+}
+
+.title {
+  font-size: 30px;
+  line-height: 1.1;
+  font-weight: 300;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.subtitle-des {
+  color: #727272;
+  font-size: 14px;
+  margin-bottom: 35px;
+  font-weight: 300;
+}
+
+.pages {
+  padding: 80px 0 40px;
+}
+
+.moduler {
+  padding: 140px 0;
+}
+
+.social-share {
+  li {
+    display: inline-block;
+    margin: 3px 1px;
+  }
+  a {
+    font-size: 20px;
+    color: $white;
+    background: $primary-color;
+    padding: 4px 10px;
+    display: inline-block;
+  }
+}
+
+// fancybox styles
+.fancybox-close {
+  background: url("../images/icons/close.png") no-repeat scroll 0 0 transparent;
+  height: 50px;
+  right: 0;
+  top: 0;
+  width: 50px;
+}
+
+.fancybox-next span {
+  background: url("../images/icons/right.png") no-repeat scroll center center #009ee3;
+  height: 50px;
+  width: 50px;
+  right: 0;
+}
+
+.fancybox-prev span {
+  background: url("../images/icons/left.png") no-repeat scroll center center #009ee3;
+  height: 50px;
+  width: 50px;
+  left: 0;
+}
+
+.fancybox-title {
+  h3 {
+    font-size: 15px;
+    margin: 0;
+  }
+  padding: 15px 8px;
+}
+
+// Page Header
+.global-page-header {
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 120px 0 25px 0;
+  position: relative;
+  background: $primary-color;
+  color: $white;
+  h2 {
+    font-size: 42px;
+    font-weight: bold;
+    color: $white;
+    text-transform: uppercase;
+  }
+  .breadcrumb {
+    background: none;
+    font-size: 16px;
+    padding: 8px  0;
+    display: block;
+    .active, li a {
+      color: $white;
+    }
+  }
+  .block {
+    position: relative;
+    z-index: 9;
+    text-align: center;
+  }
+}
+
+.works-fit {
+  padding: 40px 0;
+  figure .buttons {
+    left: 14%;
+  }
+}
+
+.company-description {
+  margin-top: 80px;
+  .block {
+    h3 {
+      margin-top: 0;
+    }
+    p {
+      color: #727272;
+    }
+  }
+}

@@ -1,0 +1,137 @@
+.works {
+  padding: 80px 0;
+  background: #FCFCFC;
+  .block {
+    position: relative;
+    z-index: 99;
+    &:hover .img-overly .overly {
+      opacity: 1;
+    }
+    h4 {
+      padding: 20px 15px;
+      margin-top: 0;
+      color: #666;
+    }
+    .img-overly {
+      position: relative;
+      background: rgba(0, 0, 0, 0.85);
+      img {
+        border-radius: 0;
+      }
+      .overly {
+        background: rgba(57, 181, 74, 0.9);
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        opacity: 0;
+        -webkit-transition: .3s all;
+        -o-transition: .3s all;
+        transition: .3s all;
+        a {
+          position: absolute;
+          top: 45%;
+          left: 22%;
+          i {
+            font-size: 30px;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+figure {
+  background: $white;
+  margin-bottom: 45px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.04), 0 2px 10px 0 rgba(0, 0, 0, 0.06);
+  .img-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  img {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    -webkit-transition: -webkit-transform 400ms;
+    transition: transform 400ms;
+  }
+  &:hover {
+    img {
+      -webkit-transform: scale3d(1.2, 1.2, 1);
+      transform: scale3d(1.2, 1.2, 1);
+    }
+    .overlay {
+      opacity: 1;
+      .buttons a {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+      }
+    }
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    -webkit-transition: opacity 400ms;
+    transition: opacity 400ms;
+    a {
+      display: inline-block;
+      color: $white;
+      padding: 10px 23px;
+      line-height: 1;
+      border: 1px solid $white;
+      border-radius: 0px;
+      margin: 4px;
+      -webkit-transform: scale3d(0, 0, 0);
+      transform: scale3d(0, 0, 0);
+      -webkit-transition: all 400ms;
+      transition: all 400ms;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    &:hover a {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  .buttons {
+    margin-top: 40%;
+    text-align: center;
+    transform: translateY(-50%);
+    display: inline-block;
+    a {
+      &:hover {
+        background: $primary-color;
+        border-color: $primary-color;
+      }
+      &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+  figcaption {
+    padding: 20px 25px;
+    margin-top: 0;
+    color: #666;
+    h4 {
+      margin: 0;
+      a {
+        color: $primary-color;
+      }
+    }
+    p {
+      font-size: 14px;
+      margin-bottom: 0;
+      margin-top: 5px;
+    }
+  }
+}

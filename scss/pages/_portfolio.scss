@@ -1,0 +1,96 @@
+
+.gallery {
+  padding: 100px;
+  figure .buttons {
+    left: 40%;
+  }
+}
+
+.portfolio-meta span {
+  margin: 5px 10px;
+  font-weight: 300;
+  a {
+    color: $white;
+  }
+}
+
+.single-post {
+  padding: 80px 0 20px;
+  .post-content {
+    padding: 40px 0;
+    ol li, ul li {
+      color: #666;
+    }
+  }
+  .media {
+    border: 1px solid #dedede;
+    padding: 30px 20px;
+    .media-body a {
+      color: $primary-color;
+      font-size: 12px;
+    }
+    .media {
+      border: none;
+    }
+  }
+  .comments {
+    margin-top: 40px;
+  }
+  .post-comment {
+    margin-top: 40px;
+    h3 {
+      margin-bottom: 15px;
+    }
+    .form-control {
+      box-shadow: none;
+      border-radius: 0;
+    }
+    .btn-send {
+      background: $primary-color;
+      color: $white;
+      border-radius: 0;
+    }
+  }
+}
+
+/* portfolio single */
+.work-single {
+  padding: 100px 0 20px;
+  h3 {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  &-image {
+    margin-bottom: 35px;
+  }
+  &-content {
+    p {
+      margin-bottom: 30px;
+    }
+  } 
+  blockquote {
+    margin-bottom: 30px;
+    padding: 30px 25px;
+    background: $gray;
+    color: $text-color;
+  }
+  &-sidebar {
+    background: $gray;
+    margin: 70px 0 50px;
+    position: sticky;
+    top: 100px;
+    padding: 30px 25px;
+    h5 {
+      margin-bottom: 8px;
+    }
+    h6 {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.btn-work{
+  color: $white;
+  background: $primary-color;
+  border-radius: 0;
+}

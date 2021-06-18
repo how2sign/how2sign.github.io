@@ -1,0 +1,92 @@
+.top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: $white;
+    color: $white;
+    -webkit-transition: all 0.2s ease-out 0s;
+    transition: all 0.2s ease-out 0s;
+    padding: 15px 0;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #dedede;
+    z-index: 10;
+    &.animated-header {
+        padding: 20px 0;
+        background: $white;
+        box-shadow: none;
+    }
+}
+
+.navbar {
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 0;
+    &.bg-light {
+        background: $white !important;
+    }
+    .nav-item {
+        .nav-link {
+            color: #444 !important;
+            font-size: 14px;
+            font-weight: 500;
+            transition: .3s all;
+            text-transform: uppercase;
+            padding: 5px 15px;
+            display: block;
+            &:hover {
+                color: $primary-color !important;
+            }
+        }
+        &:last-child {
+            .nav-link {
+                padding-right: 0;
+            }
+        }
+    }
+}
+.dropdown{
+    &-menu {
+        background: $black;
+        border: 0;
+        border-radius: 0;
+        padding: 15px;
+        box-shadow: none;
+        display: block;
+        opacity: 0;
+        z-index: 1;
+        visibility: hidden;
+        transform: scale(0.8);
+        transition: visibility 500ms, opacity 500ms, transform 500ms cubic-bezier(0.43, 0.26, 0.11, 0.99);
+        @include desktop-sm{
+            display: none;
+            opacity: unset;
+            visibility: unset;
+            transform: scale(1);
+        }
+    }
+    &-item {
+        color: $white;
+        display: block;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: normal;
+        text-decoration: none;
+        padding: 8px 0;
+        transition: .3s all;
+        &:not(:last-child) {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        &:hover {
+            color: $primary-color !important;
+            background: transparent;
+        }
+    }
+    &:hover{
+        .dropdown-menu{
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+        }
+    }
+}
