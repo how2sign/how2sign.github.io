@@ -355,13 +355,13 @@ a:hover {
   text-decoration: underline;
 }
 
-#download a {
+#download .block a{
   text-decoration: underline;
-  color: #F5FFFA;
+  color: #fff;
 }
 
 #download .media-body a{
-  color: white;
+  color: #fff;
 }
 
 #download .media-body a:hover{
