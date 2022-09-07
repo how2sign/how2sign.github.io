@@ -355,9 +355,15 @@ a:hover {
   text-decoration: underline;
 }
 
+#download a {
+  text-decoration: underline;
+  color: #F5FFFA;
+}
+
 #download .media-body a{
   color: white;
 }
+
 #download .media-body a:hover{
   font-weight:bold;
   text-decoration:underline;
