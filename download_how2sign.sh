@@ -149,16 +149,16 @@ rgb_front_clips()
 
 	## Train
 	### train_rgb_front_clips.zip
-	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1dYey1F_SeHets-UO8F9cE3VMhRBO-6e0' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1dYey1F_SeHets-UO8F9cE3VMhRBO-6e0" -O train_rgb_front_clips.zip && rm -rf /tmp/cookies.txt
+	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1VX7n0jjW0pW3GEdgOks3z8nqE6iI6EnW' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1VX7n0jjW0pW3GEdgOks3z8nqE6iI6EnW" -O train_rgb_front_clips.zip && rm -rf /tmp/cookies.txt
 
 	## Val
 	### val_rgb_front_clips.zip
-	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1oVZyTWhHShyqshC2kUrfWnBF8apIR7Z1' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1oVZyTWhHShyqshC2kUrfWnBF8apIR7Z1" -O val_rgb_front_clips.zip && rm -rf /tmp/cookies.txt
+	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1DhLH8tIBn9HsTzUJUfsEOGcP4l9EvOiO' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1DhLH8tIBn9HsTzUJUfsEOGcP4l9EvOiO" -O val_rgb_front_clips.zip && rm -rf /tmp/cookies.txt
 
 
 	## Test
 	### test_rgb_front_clips.zip
-	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1d6GHqu0_8IGiKbu3sTZHtMb0DGhbHSMu' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1d6GHqu0_8IGiKbu3sTZHtMb0DGhbHSMu" -O test_rgb_front_clips.zip && rm -rf /tmp/cookies.txt
+	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1qTIXFsu8M55HrCiaGv7vZ7GkdB3ubjaG' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1qTIXFsu8M55HrCiaGv7vZ7GkdB3ubjaG" -O test_rgb_front_clips.zip && rm -rf /tmp/cookies.txt
 
 	unzip train_rgb_front_clips.zip -d ./How2Sign/sentence_level/train/rgb_front && rm -rf train_rgb_front_clips.zip
 	unzip val_rgb_front_clips.zip   -d ./How2Sign/sentence_level/val/rgb_front && rm -rf val_rgb_front_clips.zip
@@ -176,15 +176,15 @@ rgb_side_clips()
 
 	## Train
 	### train_rgb_side_clips.zip
-	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1PIYIIOxR2vnUDzSHdq3uyoUCoIJvsuNW' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1PIYIIOxR2vnUDzSHdq3uyoUCoIJvsuNW" -O train_rgb_side_clips.zip && rm -rf /tmp/cookies.txt
+	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1oiw861NGp4CKKFO3iuHGSCgTyQ-DXHW7' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1oiw861NGp4CKKFO3iuHGSCgTyQ-DXHW7" -O train_rgb_side_clips.zip && rm -rf /tmp/cookies.txt
 
 	## Val
 	### val_rgb_side_clips.zip
-	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1vJVV777_bmSeA2_k7iGdZu2izooeKUrq' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1vJVV777_bmSeA2_k7iGdZu2izooeKUrq" -O val_rgb_side_clips.zip && rm -rf /tmp/cookies.txt
+	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1mxL7kJPNUzJ6zoaqJyxF1Krnjo4F-eQG' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1mxL7kJPNUzJ6zoaqJyxF1Krnjo4F-eQG" -O val_rgb_side_clips.zip && rm -rf /tmp/cookies.txt
 
 	## Test
 	### test_rgb_side_clips.zip
-	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1gKV_TloCbMyMhOdYvr_a-6I-PTf0Sjyi' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1gKV_TloCbMyMhOdYvr_a-6I-PTf0Sjyi" -O test_rgb_side_clips.zip && rm -rf /tmp/cookies.txt
+	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1j9v9P7UdMJ0_FVWg8H95cqx4DMSsrdbH' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1j9v9P7UdMJ0_FVWg8H95cqx4DMSsrdbH" -O test_rgb_side_clips.zip && rm -rf /tmp/cookies.txt
 
 
 	unzip train_rgb_side_clips.zip -d ./How2Sign/sentence_level/train/rgb_side && rm -rf train_rgb_side_clips.zip
@@ -202,15 +202,15 @@ rgb_front_2D_keypoints()
 	echo "***** Downloading B-F-H 2D Keypoints clips (Frontal view) files... This might take a while! *****"
 	## Train
 	### train_2D_keypoints.tar.gz
-	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1lnsDN-LxcsroOmetdG5_sXYXZ7setlS4' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1lnsDN-LxcsroOmetdG5_sXYXZ7setlS4" -O train_2D_keypoints.tar.gz && rm -rf /tmp/cookies.txt
+	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1TBX7hLraMiiLucknM1mhblNVomO9-Y0r' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1TBX7hLraMiiLucknM1mhblNVomO9-Y0r" -O train_2D_keypoints.tar.gz && rm -rf /tmp/cookies.txt
 
 	## Val
 	### val_2D_keypoints.tar.gz
-	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1aOhRknNWj8APdxHmwJdQrMo5xuIGNXxM' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1aOhRknNWj8APdxHmwJdQrMo5xuIGNXxM" -O val_2D_keypoints.tar.gz && rm -rf /tmp/cookies.txt
+	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1JmEsU0GYUD5iVdefMOZpeWa_iYnmK_7w' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1JmEsU0GYUD5iVdefMOZpeWa_iYnmK_7w" -O val_2D_keypoints.tar.gz && rm -rf /tmp/cookies.txt
 
 	## Test
 	### test_2D_keypoints.tar.gz
-	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1quj8Ipm56pH65KAKK3Pc-sqZ0ozw2gSe' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1quj8Ipm56pH65KAKK3Pc-sqZ0ozw2gSe" -O test_2D_keypoints.tar.gz && rm -rf /tmp/cookies.txt
+	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1g8tzzW5BNPzHXlamuMQOvdwlHRa-29Vp' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1g8tzzW5BNPzHXlamuMQOvdwlHRa-29Vp" -O test_2D_keypoints.tar.gz && rm -rf /tmp/cookies.txt
 
 	echo "***** Preparing the downloaded files... this might take some time! *****"
 	tar -xf train_2D_keypoints.tar.gz -C ./How2Sign/sentence_level/train/rgb_front/features && rm -rf train_2D_keypoints.tar.gz
@@ -241,15 +241,15 @@ english_translation()
 	echo "***** Downloading and preparing the English Translation text files *****"
 	## Train
 	### how2sign_train.csv
-	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1kE10vaZh_LQvZtBvT-jxT5nR9DXU6H7N' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1kE10vaZh_LQvZtBvT-jxT5nR9DXU6H7N" -O  how2sign_train.csv && rm -rf /tmp/cookies.txt
+	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1lq7ksWeD3FzaIwowRbe_BvCmSmOG12-f' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1lq7ksWeD3FzaIwowRbe_BvCmSmOG12-f" -O  how2sign_train.csv && rm -rf /tmp/cookies.txt
 
 	## Val
 	### how2sign_val.csv
-	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=12xVToQ2vm6pnXbgTyk2VqfnIxrMsORF1' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=12xVToQ2vm6pnXbgTyk2VqfnIxrMsORF1" -O  how2sign_val.csv && rm -rf /tmp/cookies.txt
+	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1aBQUClTlZB504JtDISJ0DJlbuYUZCGu3' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1aBQUClTlZB504JtDISJ0DJlbuYUZCGu3" -O  how2sign_val.csv && rm -rf /tmp/cookies.txt
 
 	## Test
 	### how2sign_test.csv
-	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1B6WVb3Mtwof3mx3Pnf-UOOyXRpFaT9Hw' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1B6WVb3Mtwof3mx3Pnf-UOOyXRpFaT9Hw" -O  how2sign_test.csv && rm -rf /tmp/cookies.txt
+	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1ScxYnEjILZMn22qKjQj8Wyr_F0nha7kG' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1ScxYnEjILZMn22qKjQj8Wyr_F0nha7kG" -O  how2sign_test.csv && rm -rf /tmp/cookies.txt
 
 	mv how2sign_train.csv How2Sign/sentence_level/train/text/en/raw_text
 	mv how2sign_val.csv How2Sign/sentence_level/val/text/en/raw_text
@@ -266,15 +266,15 @@ english_translation_re-aligned()
 	echo "***** Downloading and preparing the re-aligned English Translation text files *****"
 	## Train
 	### how2sign_realigned_train.csv
-	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1BWt2ASmOIUM8tWnCuRtl9AdQsp4zsjPN' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1BWt2ASmOIUM8tWnCuRtl9AdQsp4zsjPN" -O  how2sign_realigned_train.csv && rm -rf /tmp/cookies.txt
+	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1dUHSoefk9OxKJnHrHPX--I4tpm9QD0ok' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1dUHSoefk9OxKJnHrHPX--I4tpm9QD0ok" -O  how2sign_realigned_train.csv && rm -rf /tmp/cookies.txt
 
 	## Val
 	### how2sign_realigned_val.csv
-	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1hcPqXfHIHHGHUQYfT3eFARTIgi0M1C9_' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1hcPqXfHIHHGHUQYfT3eFARTIgi0M1C9_" -O  how2sign_realigned_val.csv && rm -rf /tmp/cookies.txt
+	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1Vpag7VPfdTCCJSao8Pz14rlPfekRMggI' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1Vpag7VPfdTCCJSao8Pz14rlPfekRMggI" -O  how2sign_realigned_val.csv && rm -rf /tmp/cookies.txt
 
 	## Test
 	### how2sign_realigned_test.csv
-	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1OsTvMsVFOMk54r65v2gcxOottV41ZEUo' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1OsTvMsVFOMk54r65v2gcxOottV41ZEUo" -O  how2sign_realigned_test.csv && rm -rf /tmp/cookies.txt
+	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1AgwBZW26kFHS4CWNMQTCMPGkBPkH3qCu' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1AgwBZW26kFHS4CWNMQTCMPGkBPkH3qCu" -O  how2sign_realigned_test.csv && rm -rf /tmp/cookies.txt
 
 	mv how2sign_realigned_train.csv How2Sign/sentence_level/train/text/en/raw_text/re_aligned
 	mv how2sign_realigned_val.csv How2Sign/sentence_level/val/text/en/raw_text/re_aligned
