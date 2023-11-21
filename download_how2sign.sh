@@ -35,42 +35,42 @@ rgb_front_videos()
 
 	## Train
 	### train_raw_videos.z01
-	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1lLu4CyDfkmDpsKGh9TDXt17WnlPb09jS' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1lLu4CyDfkmDpsKGh9TDXt17WnlPb09jS" -O train_raw_videos.z01 && rm -rf /tmp/cookies.txt
+	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1xWlMM2O3Gbp_8LK5FefoH0TVEmae6jIf' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1xWlMM2O3Gbp_8LK5FefoH0TVEmae6jIf" -O train_raw_videos.z01 && rm -rf /tmp/cookies.txt
 
 	### train_raw_videos.z02
-	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=155j4ygH4inP4MyiqC4uZP5wbEyNKsXK1' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=155j4ygH4inP4MyiqC4uZP5wbEyNKsXK1" -O train_raw_videos.z02 && rm -rf /tmp/cookies.txt
+	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1krtYdpK_LQFgEUCnHxoYAW7EyhLMLWq0' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1krtYdpK_LQFgEUCnHxoYAW7EyhLMLWq0" -O train_raw_videos.z02 && rm -rf /tmp/cookies.txt
 
 	### train_raw_videos.z03
-	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1CjLu5CiOJ4T6l_vl_froeZiAzrWt0S0G' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1CjLu5CiOJ4T6l_vl_froeZiAzrWt0S0G" -O train_raw_videos.z03 && rm -rf /tmp/cookies.txt
+	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1fXpWRNFhpuVm3ym7lT9vF_bnDjHkvP_K' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1fXpWRNFhpuVm3ym7lT9vF_bnDjHkvP_K" -O train_raw_videos.z03 && rm -rf /tmp/cookies.txt
 
 	### train_raw_videos.z04
-	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1sOjNVJpkKgRYjwVQiqPCcauo5y8RVh8z' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1sOjNVJpkKgRYjwVQiqPCcauo5y8RVh8z" -O train_raw_videos.z04 && rm -rf /tmp/cookies.txt
+	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1IFetFt4AzsxNCMZ0VVpX7YRgFAm58X48' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1IFetFt4AzsxNCMZ0VVpX7YRgFAm58X48" -O train_raw_videos.z04 && rm -rf /tmp/cookies.txt
 
 	### train_raw_videos.z05
-	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1sR1zfu0FiBYxZEp4Giv0jYmO5MjSCnCP' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1sR1zfu0FiBYxZEp4Giv0jYmO5MjSCnCP" -O train_raw_videos.z05 && rm -rf /tmp/cookies.txt
+	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1ZHuuun6Ae-AOLBns3LmuH7w8C9YCB4gH' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1ZHuuun6Ae-AOLBns3LmuH7w8C9YCB4gH" -O train_raw_videos.z05 && rm -rf /tmp/cookies.txt
 
 	### train_raw_videos.z06
-	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=19S3mYB0mOI1kBLEJXK7E2l1YRio2dSdS' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=19S3mYB0mOI1kBLEJXK7E2l1YRio2dSdS" -O train_raw_videos.z06 && rm -rf /tmp/cookies.txt
+	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1FQQIPblk-oLH_vu7h2tDO0oJaZ3xkp5N' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1FQQIPblk-oLH_vu7h2tDO0oJaZ3xkp5N" -O train_raw_videos.z06 && rm -rf /tmp/cookies.txt
 
 	### train_raw_videos.z07
-	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1_NMCfiMsAmwspub6I-jRD0TOKSbHvdCS' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1_NMCfiMsAmwspub6I-jRD0TOKSbHvdCS" -O train_raw_videos.z07 && rm -rf /tmp/cookies.txt
+	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=19XNgERcolGAMPPgX-Gx_GebSTx3W4o0r' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=19XNgERcolGAMPPgX-Gx_GebSTx3W4o0r" -O train_raw_videos.z07 && rm -rf /tmp/cookies.txt
 
 	### train_raw_videos.z08
-	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1oZKauBSGHU1HN1ZdWM8tCnYUILEDsHuT' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1oZKauBSGHU1HN1ZdWM8tCnYUILEDsHuT" -O train_raw_videos.z08 && rm -rf /tmp/cookies.txt
+	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1YN-SA9uzrogEdKeT6UdQUIcuGEyYJILg' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1YN-SA9uzrogEdKeT6UdQUIcuGEyYJILg" -O train_raw_videos.z08 && rm -rf /tmp/cookies.txt
 
 	### train_raw_videos.z09
-	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1fwpJEC55RfXAxovKhKpCpk1XFaiszmmZ' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1fwpJEC55RfXAxovKhKpCpk1XFaiszmmZ" -O train_raw_videos.z09 && rm -rf /tmp/cookies.txt
+	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1SZQ2GzPLCkRqvsImAjULAPBiuAKi9DE9' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1SZQ2GzPLCkRqvsImAjULAPBiuAKi9DE9" -O train_raw_videos.z09 && rm -rf /tmp/cookies.txt
 
 	### train_raw_videos.zip
-	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1wtH4jnnUlSQTLoYM8KtlzSHksvWI_s-s' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1wtH4jnnUlSQTLoYM8KtlzSHksvWI_s-s" -O train_raw_videos.zip && rm -rf /tmp/cookies.txt
+	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1Xe1T5okJiopMXUiH3sc0mdCWNDYSBopd' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1Xe1T5okJiopMXUiH3sc0mdCWNDYSBopd" -O train_raw_videos.zip && rm -rf /tmp/cookies.txt
 
 	## Val
 	### val_raw_videos.zip
-	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1AxoXv8qQv2M4Wzyg_i6RPv-U35x-ZH7a' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1AxoXv8qQv2M4Wzyg_i6RPv-U35x-ZH7a" -O val_raw_videos.zip && rm -rf /tmp/cookies.txt
+	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1fCkyuKSsc7gauljuL9sx_jBomf3N6i0g' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1fCkyuKSsc7gauljuL9sx_jBomf3N6i0g" -O val_raw_videos.zip && rm -rf /tmp/cookies.txt
 
 	## Test
 	### test_raw_videos.zip
-	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=18YOZ2tM74MmcgZJ63VQe0uzFqWe0j3Hl' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=18YOZ2tM74MmcgZJ63VQe0uzFqWe0j3Hl" -O test_raw_videos.zip && rm -rf /tmp/cookies.txt
+	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1z0i6BBGHQ12ChY63hZH56QnczvQ0JfTb' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1z0i6BBGHQ12ChY63hZH56QnczvQ0JfTb" -O test_raw_videos.zip && rm -rf /tmp/cookies.txt
 
 	# Merge all train zip files
 	echo "***** Preparing the downloaded files... this might take some time! *****"
